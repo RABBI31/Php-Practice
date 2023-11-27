@@ -8,9 +8,9 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/php-demo/index.php" class="text-gray-300 hover:bg-gray-700 hover:text-white text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
-              <a href="/php-demo/about.php" class="bg-gray-900 text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">About</a>
-              <a href="/php-demo/contact.php" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+              <a href="/php-demo/index.php" class="<?= urlIs('/php-demo/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
+              <a href="/php-demo/about.php" class="<?= urlIs('/php-demo/about.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">About</a>
+              <a href="/php-demo/contact.php" class="<?= urlIs('/php-demo/contact.php') ? 'bg-gray-900 text-white' : 'text-gray-300'?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
             </div>
           </div>
         </div>
